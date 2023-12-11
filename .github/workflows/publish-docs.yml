@@ -25,4 +25,4 @@ jobs:
       - name: Publish documentation with goreleaser
         run: |
           go install github.com/goreleaser/goreleaser@v0.180.0
-          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} goreleaser release --rm-dist --snapshot --skip-publish
+          GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }} goreleaser release --rm-dist --snapshot
